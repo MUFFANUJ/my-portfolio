@@ -59,13 +59,6 @@ document.querySelector('.close5').onclick = () => {
 
 // scroll reveal js 
 let value = '30px';
-
-// if ($(window).width() < 768) {
-//   value = '10px';
-// } else {
-//   value = '80px';
-// }
-
 ScrollReveal({ 
   // reset: true ,
   distance: value,
@@ -80,7 +73,7 @@ ScrollReveal().reveal('.home-content h1 ' ,{ origin: 'left' });
 ScrollReveal().reveal('.home-content p , .about-content p, #menu-icon' ,{ origin: 'right' });
 
 
-// typed js 
+// USE OF typed js 
 
 const typed = new Typed('.multiple-text', {
   strings: ['Frontend Developer', 'Designer','Video/Photo Editor'],
@@ -92,21 +85,21 @@ const typed = new Typed('.multiple-text', {
 
 
 // circle skills 
-const circles = document.querySelectorAll('.circle');
-circles.forEach(elem => {
-  var dots = elem.getAttribute("data-dots");
-  var marked = elem.getAttribute("data-percent");
-  var perent = Math.floor(dots*marked/100);
-  var points = "";
-  var rotate = 360/dots;
+// const circles = document.querySelectorAll('.circle');
+// circles.forEach(elem => {
+//   var dots = elem.getAttribute("data-dots");
+//   var marked = elem.getAttribute("data-percent");
+//   var perent = Math.floor(dots*marked/100);
+//   var points = "";
+//   var rotate = 360/dots;
 
-  for (let i = 0; i< dots ; i++) {
-    points += `<div class="points" style="--i:${i}; --rot:${rotate}deg "></div>`
-  }
-  elem.innerHTML = points;
+//   for (let i = 0; i< dots ; i++) {
+//     points += `<div class="points" style="--i:${i}; --rot:${rotate}deg "></div>`
+//   }
+//   elem.innerHTML = points;
 
-  const pointsMarked = elem.querySelectorAll('.points');
-  for (let i=0 ; i<percent ; i++) {
-    pointsMarked[i].classList.add('marked');
-  }
-})
+//   const pointsMarked = elem.querySelectorAll('.points');
+//   for (let i=0 ; i<percent ; i++) {
+//     pointsMarked[i].classList.add('marked');
+//   }
+// })
